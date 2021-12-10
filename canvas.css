@@ -1,0 +1,17 @@
+body {
+    box-sizing: border-box;
+}
+
+#myCanvas {
+    border: 1px solid black;
+}
+
+.container__canvas {
+    position: relative;
+}
+
+.container__form {
+    position: absolute;
+    left: 600px;
+    top: 80px;
+}

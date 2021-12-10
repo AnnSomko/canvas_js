@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="canvas.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <div class="container__canvas">
+        <h1>The canvas element</h1>
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+    </div>
+    <div class="container__form">
+    <form>
+        <span>First rectangle</span><br>
+        <label for="x1">x1</label><br>
+        <input type="text" id="x1" name="x1"><br>
+        <label for="x2">x2</label><br>
+        <input type="text" id="x2" name="x2"><br>
+        <label for="y1">y1</label><br>
+        <input type="text" id="y1" name="y1"><br>
+        <label for="x2">y2</label><br>
+        <input type="text" id="y2" name="y2"><br>
+        <span>Second rectangle</span><br>
+        <label for="x3">x3</label><br>
+        <input type="text" id="x3" name="x3"><br>
+        <label for="x4">x4</label><br>
+        <input type="text" id="x4" name="x4"><br>
+        <label for="y3">y3</label><br>
+        <input type="text" id="y3" name="y3"><br>
+        <label for="y4">y4</label><br>
+        <input type="text" id="y4" name="y4"><br>
+    </form>
+    <button onclick="rectangles(); check();">Check</button>
+</div>
+</div>
+    <script src="canvas.js"></script>
+</body>
+</html>
