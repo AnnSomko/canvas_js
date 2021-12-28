@@ -4,17 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="canvas.css">
+    <style>
+        body {
+    box-sizing: border-box;
+}
+
+#canvas_plot {
+    border: 1px solid black;
+    background: #ead9ce;
+}
+
+.container__form {
+    position: absolute;
+    left: 600px;
+    top: 80px;
+}
+    </style>
     <title>Document</title>
 </head>
-<body>
-    <div class="container">
-    <div class="container__canvas">
+<body onload="draw()">
         <h1>The canvas element</h1>
-    <canvas id="myCanvas" width="500" height="500"></canvas>
-    </div>
+        <canvas id="canvas_plot" width="500" height="500"></canvas>
+    
     <div class="container__form">
-    <form>
+    <form id="form">
         <span>First rectangle</span><br>
         <label for="x1">x1</label><br>
         <input type="text" id="x1" name="x1"><br>
@@ -33,10 +46,10 @@
         <input type="text" id="y3" name="y3"><br>
         <label for="y4">y4</label><br>
         <input type="text" id="y4" name="y4"><br>
+        <input type="submit" value="Check" onclick="check()">
+        <input type="submit" value="Reset" onclick="reset()">
     </form>
-    <button onclick="rectangles(); check();">Check</button>
 </div>
-</div>
-    <script src="canvas.js"></script>
+    <script src="./canvas.js"></script>
 </body>
 </html>
