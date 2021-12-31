@@ -67,6 +67,7 @@ let oneRectWidth = x1 + x2;
 let oneRectHeight = y1 + y2;
 let secRectWidth = x3 + x4;
 let secRectHeight = y3 + y4;
+
       if(x3>x2 || x1>x4) { // right & left
         alert('not cross');
       } else if (y3>y2 || y1>y4) { // top & bottom
@@ -74,9 +75,11 @@ let secRectHeight = y3 + y4;
       } else {
         alert('cross');
       }  
-      
+      ctx.clearRect(x1,y1,oneRectWidth,oneRectHeight);
+      ctx.clearRect(x2,y2,secRectWidth,secRectHeight);
         ctx.translate(250, 250);
         ctx.scale(1,-1);
+
         ctx.fillStyle = 'red';
         ctx.fillRect(x1,y1,oneRectWidth,oneRectHeight);
         
